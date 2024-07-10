@@ -1,7 +1,8 @@
+
+// Should work on Linux systems (as Docker is also Linux based) but if it's not well then, more adjustment.
 So to actually this you will have to have a few things, while you can use other applications, I will only recommend the ones I have personally used.
 
-1: Ensure you have Apache pointing to the repository containing the PHP files. this is very important.
-// Should work on Linux systems (as Docker is also Linux based) but if it's not well then, more adjustment.
+
 
 
 -Deploy the Python backend  via Docker.
