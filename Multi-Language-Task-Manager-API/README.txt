@@ -1,6 +1,6 @@
 
 // Should work on Linux systems (as Docker is also Linux based) but if it's not well then, more adjustment.
-So to actually this you will have to have a few things, while you can use other applications, I will only recommend the ones I have personally used.
+So to actually use this you will have to have a few things, while you can use other applications, I will only recommend the ones I have personally used.
 
 
 
@@ -60,11 +60,11 @@ Set Headers: Click on the Headers tab and add:
 Key: Content-Type
 Value: application/json
 Set Body: Click on the Body tab, select raw and JSON from the dropdown, and enter:
-json
-Copy code
+
 {
   "task": "New Task"
 }
+
 Send Request: Click the Send button.
 Delete a Task
 Select Method: DELETE
@@ -86,14 +86,15 @@ Set Headers: Click on the Headers tab and add:
 Key: Content-Type
 Value: application/json
 Set Body: Click on the Body tab, select raw and JSON from the dropdown, and enter:
-json
+
 {
   "task": "New Task"
 }
+
 Send Request: Click the Send button.
 Delete a Task
 Select Method: DELETE
-Enter URL: http://localhost:8080/api.php?id=1 (replace 1 with the task ID)
+Enter URL: http://localhost:8080/api.php?id=1 (replace 1 with the task ID)  keep in mind the task id is more complex, an example would be  668e9df009faa
 Send Request: Click the Send button.
 
 
@@ -112,15 +113,15 @@ Set Headers: Click on the Headers tab and add:
 Key: Content-Type
 Value: application/json
 Set Body: Click on the Body tab, select raw and JSON from the dropdown, and enter:
-json
-Copy code
+
 {
   "task": "New Task"
 }
+
 Send Request: Click the Send button.
 Delete a Task
 Select Method: DELETE
-Enter URL: http://localhost:8081/tasks/1 (replace 1 with the task ID)
+Enter URL: http://localhost:8081/tasks/1 (replace 1 with the task ID) - automatically assigned, changing the id in JSON does not affect this.
 Send Request: Click the Send button.
 
 
@@ -138,14 +139,14 @@ Set Headers: Click on the Headers tab and add:
 Key: Content-Type
 Value: application/json
 Set Body: Click on the Body tab, select raw and JSON from the dropdown, and enter:
-json
-Copy code
+
 {
   "title": "New Task",
   "description": "Task description",
   "priority": 1,
   "dueDate": "2024-07-10"
 }
+
 Send Request: Click the Send button.
 Retrieve a Specific Task
 Select Method: GET
@@ -159,7 +160,6 @@ Key: Content-Type
 Value: application/json
 Set Body: Click on the Body tab, select raw and JSON from the dropdown, and enter:
 
-json
 {
   "title": "Updated Task",
   "description": "Updated description",
