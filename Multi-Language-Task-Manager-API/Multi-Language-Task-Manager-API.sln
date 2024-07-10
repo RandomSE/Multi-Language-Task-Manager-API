@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{5FE7C81E-9AA7-4AAB-B745-45D905EA4C43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager", "services\csharp\TaskManager.csproj", "{C8792D95-1221-439E-BD06-A3396AE31F7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8792D95-1221-439E-BD06-A3396AE31F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8792D95-1221-439E-BD06-A3396AE31F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8792D95-1221-439E-BD06-A3396AE31F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8792D95-1221-439E-BD06-A3396AE31F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8792D95-1221-439E-BD06-A3396AE31F7C} = {5FE7C81E-9AA7-4AAB-B745-45D905EA4C43}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45F64925-FA41-4FA0-9431-71ECE4E41110}
+	EndGlobalSection
+EndGlobal

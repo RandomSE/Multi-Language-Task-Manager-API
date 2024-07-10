@@ -1,0 +1,19 @@
+# Use the official PHP image with Apache
+FROM php:7.4-apache
+
+# Copy the PHP application files to the Apache web root
+COPY . /var/www/html/
+
+# Set the appropriate permissions
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 755 /var/www/html
+
+# Ensure the Apache configuration allows access
+RUN echo '<Directory /var/www/html>\nOptions Indexes FollowSymLinks\nAllowOverride None\nRequire all granted\n</Directory>' > /etc/apache2/conf-available/permissions.conf \
+    && a2enconf permissions
+
+# Expose port 80
+EXPOSE 80
+
+# Start Apache server in the foreground
+CMD ["apache2-foreground"]
